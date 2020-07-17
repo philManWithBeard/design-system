@@ -13,6 +13,7 @@ button,
     box-shadow: 0 2px 0 0 $cads-language__button-shadow-colour;
     outline: none !important;
     margin: 0 0 $cads-spacing-5 0;
+    position: relative;
 
     @include cads-media-breakpoint-down(sm) {
         font-size: 1rem;
@@ -64,5 +65,10 @@ button,
         border-color: $cads-language__focus-border-colour;
         background-color: $cads-language__focus-colour;
         box-shadow: 0 2px 0 0 $cads-language__focus-border-colour;
+    }
+
+    &:active {
+        box-shadow: none;
+        bottom: -2px;
     }
 }
